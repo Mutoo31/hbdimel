@@ -7,11 +7,21 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: black;
-      color: white;
-      overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffc0cb, #ffe6f0); /* gradasi pink */
+    color: #4a0033;
+    overflow: hidden;
+    position: relative;
     }
+    .decor {
+    position: absolute;
+    z-index: 0;
+    width: 100px;
+    opacity: 0.5;
+    }
+    .ballon1 { top: 10px; left: 10px; }
+    .ballon2 { top: 10px; right: 10px; }
+    .cake { bottom: 10px; left: 50%; transform: translateX(-50%); width: 150px; }
     .slide {
       display: none;
       flex-direction: column;
@@ -40,9 +50,13 @@
 </head>
 <body>
   <audio id="bg-music" autoplay loop>
-    <source src="https://dl.sndup.net/8pbd/BestPart.mp3" type="audio/mp3" />
-    Browser kamu tidak mendukung audio.
+    <source src="https://mutoo31.github.io/hbdimel/BestPart.mp3" type="audio/mp3" />
   </audio>
+
+
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468375.png" class="decor ballon1" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468375.png" class="decor ballon2" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3534/3534032.png" class="decor cake" />
 
   <div class="slide" style="display:flex;">
     <img src="image1.jpg" alt="Foto 1">
