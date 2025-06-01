@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun, Imellia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      color: white;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      animation: fade 2s ease-in-out;
+    }
+    .slide img {
+      max-width: 90%;
+      max-height: 60vh;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+    }
+    .text {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="https://dl.sndup.net/8pbd/BestPart.mp3" type="audio/mp3" />
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <div class="slide" style="display:flex;">
+    <img src="image1.jpg" alt="Foto 1">
+    <div class="text">Senyummu adalah bahagiaku</div>
+  </div>
+  <div class="slide">
+    <img src="image2.jpg" alt="Foto 2">
+    <div class="text">Kebahagiaanmu juga kebahagiaanku</div>
+  </div>
+  <div class="slide">
+    <img src="image3.jpg" alt="Foto 3">
+    <div class="text">Membuatmu kesal adalah hobiku</div>
+  </div>
+  <div class="slide">
+    <img src="image4.jpg" alt="Foto 4">
+    <div class="text">Kamu adalah bagian dari tujuanku</div>
+  </div>
+  <div class="slide">
+    <img src="image5.jpg" alt="Foto 5">
+    <div class="text">Bin
